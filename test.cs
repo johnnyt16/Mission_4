@@ -1,6 +1,4 @@
-namespace Mission_4;
-
-char[,] board = new char[3, 3];
+﻿char[,] board = new char[3, 3];
 
 //Print the Board
 
