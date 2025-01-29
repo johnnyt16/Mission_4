@@ -9,12 +9,7 @@ internal class Program
         // Initialize
         int Player1_move = 0;
         int Player2_move = 0;
-        string[,] board = 
-        {
-            {"1", "2", "3"},
-            {"4", "5", "6"},
-            {"7", "8", "9"},
-        }; 
+        string[] board = new string[9]; 
 
         
         // Welcome Message
@@ -29,7 +24,7 @@ internal class Program
         Thread.Sleep(300);
         Console.Write(".");
 
-        // Display Empty Board 
+        tt.PrintBoard(board);
 
         do
         {
