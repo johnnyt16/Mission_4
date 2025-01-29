@@ -1,6 +1,6 @@
 using System;
 
-public class TicTacToeHelper
+public class TicTacTools
 {
     // Method to print the board
     public static void PrintBoard(string[] board)
