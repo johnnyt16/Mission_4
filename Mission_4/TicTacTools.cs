@@ -10,9 +10,9 @@ public class TicTacTools
         Console.WriteLine();
 
         Console.WriteLine(" {0} | {1} | {2} ", board[0], board[1], board[2]);
-        Console.WriteLine("---+---+---");
+        Console.WriteLine("-----------");
         Console.WriteLine(" {0} | {1} | {2} ", board[3], board[4], board[5]);
-        Console.WriteLine("---+---+---");
+        Console.WriteLine("-----------");
         Console.WriteLine(" {0} | {1} | {2} ", board[6], board[7], board[8]);
         Console.WriteLine();
     }
@@ -31,10 +31,13 @@ public class TicTacTools
         // Check for a winner
         for (int i = 0; i < winningCombinations.GetLength(0); i++)
         {
-            if (board[winningCombinations[i, 0]] == board[winningCombinations[i, 1]] &&
-                board[winningCombinations[i, 1]] == board[winningCombinations[i, 2]])
+            int a = winningCombinations[i, 0];
+            int b = winningCombinations[i, 1];
+            int c = winningCombinations[i, 2];
+
+            if (board[a] == board[b] && board[b] == board[c])
             {
-                return board[winningCombinations[i, 0]]; // Return the winner ("X" or "O")
+                return board[a]; // Return the winner ("X" or "O")
             }
         }
 
@@ -47,6 +50,6 @@ public class TicTacTools
             }
         }
 
-        return "TIE"; // If the board is full and no winner, it's a tie
+        return "Tie"; // If the board is full and no winner, it's a tie
     }
 }
