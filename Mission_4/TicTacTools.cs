@@ -5,7 +5,6 @@ public class TicTacTools
     // Method to print the board
     public void PrintBoard(string[] board)
     {
-        Console.Clear();
         Console.WriteLine("Tic-Tac-Toe Game");
         Console.WriteLine();
 
