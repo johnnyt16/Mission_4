@@ -34,15 +34,15 @@ internal class Program
         do
         {
             Console.WriteLine("Player 1, please select your choice (EXAMPLE: 3)");
-            
+
             do
-            { 
+            {
                 Player1_move = Console.ReadLine();
-                
-            } while (!tt.Validate(Player1_move, moves)
+
+            } while (!tt.Validate(Player1_move, moves));
 
 
-        }
+        };
         
         
         // Functionality to send choice to Board Update Function
