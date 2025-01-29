@@ -3,7 +3,7 @@ using System;
 public class TicTacTools
 {
     // Method to print the board
-    public void PrintBoard(string[] board)
+    public static void PrintBoard(string[] board)
     {
         Console.WriteLine("Tic-Tac-Toe Game");
         Console.WriteLine();
