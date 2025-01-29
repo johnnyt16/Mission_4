@@ -7,6 +7,13 @@ internal class Program
         // Initialize
         string Player1_move = "";
         string Player2_move = "";
+        string[,] board = 
+        {
+            {"-", "-", "-"},
+            {"-", "-", "-"},
+            {"-", "-", "-"},
+        }; 
+
         
         // Welcome Message
         Console.WriteLine("Welcome to Tic Tac Toe");
@@ -20,7 +27,7 @@ internal class Program
         Thread.Sleep(300);
         Console.Write(".");
         
-        // Display Empty Board
+        Console.Write
         
         Console.WriteLine("Player 1, please select your choice (EXAMPLE: 'A, 3')");
         Player1_move = Console.ReadLine();
