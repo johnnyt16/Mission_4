@@ -4,14 +4,16 @@ internal class Program
 {
     public static void Main(string[] args)
     {
+        TicTacTools tt = new TicTacTools();
+        
         // Initialize
-        string Player1_move = "";
-        string Player2_move = "";
+        int Player1_move = 0;
+        int Player2_move = 0;
         string[,] board = 
         {
-            {"-", "-", "-"},
-            {"-", "-", "-"},
-            {"-", "-", "-"},
+            {"1", "2", "3"},
+            {"4", "5", "6"},
+            {"7", "8", "9"},
         }; 
 
         
@@ -26,15 +28,30 @@ internal class Program
         Console.Write(".");
         Thread.Sleep(300);
         Console.Write(".");
+
+        // Display Empty Board 
+
+        do
+        {
+            Console.WriteLine("Player 1, please select your choice (EXAMPLE: 3)");
+            
+            do
+            { 
+                Player1_move = Console.ReadLine();
+                
+            } while (!tt.Validate(Player1_move, moves)
+
+
+        }
         
-        Console.Write
-        
-        Console.WriteLine("Player 1, please select your choice (EXAMPLE: 'A, 3')");
-        Player1_move = Console.ReadLine();
         
         // Functionality to send choice to Board Update Function
         
         // Display Updated Board
+        
+        Console.WriteLine("Player 2, please select your choice (EXAMPLE: 'A, 3')");
+        
+        Player2_move = Console.ReadLine();
         
         
     }
