@@ -1,3 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+internal class Program
+{
+    public static void Main(string[] args)
+    {
+        string Player1_move = "";
+        string Player2_move = "";
+        
+        Console.WriteLine("Welcome to Tic Tac Toe");
+        Console.WriteLine("2 Players Required.");
+        
+        Console.Write("Generating a game board......");
+        Thread.Sleep(300);
+        Console.Write(".");
+        Thread.Sleep(300);
+        Console.Write(".");
+        Thread.Sleep(300);
+        Console.Write(".");
+        
+        Console.WriteLine("Player 1, please select your choice (EXAMPLE: 'A, 3')");
+        Player1_move = Console.ReadLine();
+        
+        // Functionality to send choice 
+        
+        
+    }
+}
